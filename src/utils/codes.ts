@@ -1,6 +1,7 @@
 // codes.ts
 
-export const categoriesCode = `const categories = [
+export const categoriesCode = `// Statement
+const categories = [
   {
     name: 'category1',
     subcategories: [
@@ -36,7 +37,6 @@ console.log(getCategoryPath(categories, 'category5')); // should output: '/categ
 
 export const getCategoryPathCode = `// Implementation of getCategoryPath
 const getCategoryPath = (categories, categoryName) => {
-  // Helper function to perform recursive search
   const search = (categories, categoryName, path) => {
     for (const category of categories) {
       const currentPath = \`\${path}/\${category.name}\`;
