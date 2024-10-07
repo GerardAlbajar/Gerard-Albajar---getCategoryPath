@@ -10,7 +10,7 @@
         v-model="inputCategory"
         @keyup.enter="findCategoryPath"
         type="text"
-        placeholder="Ingresa el nombre de la categoría"
+        placeholder="Please enter the category name"
       />
       <button @click="findCategoryPath" :disabled="inputCategory.trim() === ''">
         Search route
@@ -177,8 +177,8 @@ input {
 }
 
 button:disabled {
-  background-color: #e0e0e0; /* Color para el botón deshabilitado */
-  cursor: not-allowed; /* Cambiar el cursor */
+  background-color: #e0e0e0;
+  cursor: not-allowed;
 }
 
 @media (max-width: 768px) {

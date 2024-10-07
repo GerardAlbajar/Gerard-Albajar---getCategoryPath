@@ -1,5 +1,3 @@
-// codes.ts
-
 export const categoriesCode = `// Statement
 const categories = [
   {
